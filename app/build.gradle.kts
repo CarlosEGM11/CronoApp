@@ -1,6 +1,9 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("com.google.dagger.hilt.android")
+    id("kotlin-kapt")
+
 }
 
 android {
@@ -51,6 +54,25 @@ android {
 
 dependencies {
 
+    // Room
+    val room_version = "2.6.1"
+    implementation ("androidx.room:room-ktx:$room_version")
+    kapt( "androidx.room:room-compiler:$room_version")
+
+    //  Dagger Hilt
+    implementation("com.google.dagger:hilt-android:2.46")
+    kapt("com.google.dagger:hilt-compiler:2.46")
+
+
+
+    //Navigation
+    val nav_version = "2.5.3"
+    implementation("androidx.navigation:navigation-compose:$nav_version")
+
+
+
+    // Swipe
+    implementation( "me.saket.swipe:swipe:1.1.1")
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
     implementation("androidx.activity:activity-compose:1.8.2")
