@@ -41,7 +41,6 @@ fun HomeView(navController: NavController, dataVM:DataViewModel){
                     containerColor = MaterialTheme.colorScheme.primary
                 )
             )
-
         },
         floatingActionButton = {
             FloatButton {

@@ -89,8 +89,6 @@ fun CronCard(title: String,
             )
 
         }
-
-
     }
 }
 

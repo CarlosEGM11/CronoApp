@@ -30,6 +30,7 @@ class DataViewModel @Inject constructor(
         }
 
     }
+
     fun addCrono(crono:Cronos) = viewModelScope.launch { repository.addCrono(crono) }
     fun updateCrono(crono:Cronos) = viewModelScope.launch { repository.updateCrono(crono) }
     fun deleteCrono(crono: Cronos) = viewModelScope.launch { repository.deleteCrono(crono) }

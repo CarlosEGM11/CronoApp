@@ -83,7 +83,7 @@ class CronometroViewModel @Inject constructor(
                     time += 1
                 }
             }
-        }else{
+        } else{
             cronoJob?.cancel()
         }
     }

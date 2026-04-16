@@ -104,9 +104,7 @@ fun ContentAddView(it:PaddingValues,
             }) {
                 Text(text = "Guardar")
             }
-
         }
-
     }
 }
 //AddView(navController:  navegación entre vistas)

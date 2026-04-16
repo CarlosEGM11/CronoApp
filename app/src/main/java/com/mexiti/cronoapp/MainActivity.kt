@@ -9,7 +9,6 @@ import com.mexiti.cronoapp.viewmodel.CronometroViewModel
 import com.mexiti.cronoapp.viewmodel.DataViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
-
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

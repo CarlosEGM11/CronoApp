@@ -63,9 +63,7 @@ fun EditView(navController: NavController,
 
         ContentEditView(it = it, navController, cronometroVM,dataVM,id)
     }
-
 }
-
 @Composable
 fun ContentEditView(it: PaddingValues,
                     navController: NavController,

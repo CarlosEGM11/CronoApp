@@ -30,7 +30,6 @@ fun FloatButton(onClick: () -> Unit ){
         contentColor = Color.White
         ) {
         Icon(imageVector = Icons.Default.Add, contentDescription = "Agregar")
-
     }
 }
 

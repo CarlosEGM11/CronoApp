@@ -12,7 +12,7 @@ import kotlinx.coroutines.flow.Flow
 
 @Dao  //Data Access Observer
 interface CronosDatabaseDao {
-    //CRUD:operaciones de SQL
+    //CRUD: operaciones de SQL
     @Query("SELECT * FROM cronos")
     fun getCronos(): Flow<List<Cronos>> //Flow permite manejar corrutinas con colecciones de datos
     @Query("SELECT * FROM cronos Where id=:id")

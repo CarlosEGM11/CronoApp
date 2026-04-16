@@ -29,7 +29,6 @@ fun NavManager(cronometroVM: CronometroViewModel, dataVM: DataViewModel) {
             val id = it.arguments?.getLong("id") ?:0
             EditView(navController = navController,
                 cronometroVM =cronometroVM , dataVM = dataVM, id =id )
-
         }
     }
 }
