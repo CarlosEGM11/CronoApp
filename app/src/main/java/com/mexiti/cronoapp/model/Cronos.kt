@@ -14,3 +14,4 @@ data class Cronos(
     @ColumnInfo(name = "crono")
     val crono:Long
 )
+

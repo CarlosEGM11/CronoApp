@@ -45,7 +45,6 @@ fun HomeView(navController: NavController, dataVM:DataViewModel){
         floatingActionButton = {
             FloatButton {
                 navController.navigate("AddView")
-
             }
         }
     ) {

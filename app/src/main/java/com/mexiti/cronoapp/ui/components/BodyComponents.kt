@@ -107,7 +107,6 @@ fun MainTitlePreview(){
 }
 
 
-
     @Preview(showBackground = true)
     @Composable
     fun MainTextfieldPreview(){
