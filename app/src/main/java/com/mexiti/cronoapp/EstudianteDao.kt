@@ -6,9 +6,6 @@ import androidx.room.*
 interface EstudianteDao {
 
     @Insert
-    suspend fun insertar(estudiante: Estudiante)
-
-    @Insert
     suspend fun insertarTodos(estudiantes: List<Estudiante>)
 
     @Query("SELECT * FROM estudiantes")
@@ -17,9 +14,9 @@ interface EstudianteDao {
     @Query("SELECT * FROM estudiantes WHERE id = :id")
     suspend fun obtenerPorId(id: Int): Estudiante?
 
+    @Query("SELECT * FROM estudiantes WHERE nombre = :nombre LIMIT 1")
+    suspend fun obtenerPorNombre(nombre: String): Estudiante?
+
     @Update
     suspend fun actualizar(estudiante: Estudiante)
-
-    @Delete
-    suspend fun eliminar(estudiante: Estudiante)
 }
